@@ -1,10 +1,11 @@
 name: Hello World
 description: Greets you by name!
 
-image: alpine:3
-command: ["echo"]
+builder: deno
+builderConfig:
+  entrypoint: main.ts
 
-arguments: ["Hello, {{.name}}!"]
+arguments: ["--name", "{{.name}}"]
 parameters:
   - name: Name
     slug: name

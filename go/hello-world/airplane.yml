@@ -1,9 +1,9 @@
 name: Hello World
-description: Greets you with an optional name!
+description: Greets you by name!
 
-builder: deno
+builder: go
 builderConfig:
-  entrypoint: main.ts
+  entrypoint: main.go
 
 arguments: ["--name", "{{.name}}"]
 parameters:

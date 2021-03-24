@@ -1,0 +1,5 @@
+name: Print Env
+description: Logs the environment
+
+image: alpine:3
+command: ["env"]

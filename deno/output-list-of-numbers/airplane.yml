@@ -1,0 +1,6 @@
+name: Number list
+description: Echos a series of numbers.
+
+builder: deno
+builderConfig:
+  entrypoint: main.ts

@@ -5,7 +5,7 @@ builder: docker
 builderConfig:
   dockerfile: Dockerfile
 
-arguments: ["--name", "{{.name}}"]
+arguments: ["{{.name}}"]
 parameters:
   - name: Name
     slug: name

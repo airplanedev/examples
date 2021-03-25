@@ -1,5 +1,4 @@
 name: Hello World
-slug: hello_world
 description: Greets you by name!
 
 builder: docker

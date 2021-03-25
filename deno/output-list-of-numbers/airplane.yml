@@ -1,5 +1,4 @@
 name: Number list
-slug: number_list
 description: Echos a series of numbers.
 
 builder: deno

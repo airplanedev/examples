@@ -1,4 +1,5 @@
 name: Print Env
+slug: print_env
 description: Logs the environment
 
 image: alpine:3

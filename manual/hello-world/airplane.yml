@@ -1,0 +1,12 @@
+name: Hello World
+description: Greets you by name!
+
+image: alpine:3
+command: ["echo"]
+
+arguments: ["Hello, {{.name}}!"]
+parameters:
+  - name: Name
+    slug: name
+    type: string
+    default: World

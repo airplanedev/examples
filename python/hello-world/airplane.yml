@@ -1,0 +1,13 @@
+name: Hello World
+description: Greets you by name!
+
+builder: python
+builderConfig:
+  entrypoint: main.py
+
+arguments: ["--name", "{{.name}}"]
+parameters:
+  - name: Name
+    slug: name
+    type: string
+    default: World

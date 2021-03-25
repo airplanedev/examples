@@ -1,0 +1,8 @@
+{
+  "name": "hello-world-javascript",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}

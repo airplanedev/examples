@@ -1,0 +1,13 @@
+name: Hello World
+description: Greets you by name!
+
+builder: docker
+builderConfig:
+  dockerfile: Dockerfile
+
+arguments: ["{{.name}}"]
+parameters:
+  - name: Name
+    slug: name
+    type: string
+    default: World

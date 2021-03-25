@@ -14,5 +14,5 @@ Then, deploy any example:
 
 ```sh
 # f.e., to deploy the "Hello World" example in Node.js:
-airplane tasks deploy -f "https://github.com/airplanedev/examples/node/hello-world-javascript/airplane.yml"
+airplane tasks deploy -f github.com/airplanedev/examples/node/hello-world-javascript/airplane.yml
 ```

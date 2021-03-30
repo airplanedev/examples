@@ -5,7 +5,7 @@ builder: node
 builderConfig:
   entrypoint: main.js
   language: javascript
-  nodeVersion: "15.11.0"
+  nodeVersion: "15"
 
 arguments: ["--name", "{{.name}}"]
 parameters:

@@ -1,5 +1,6 @@
 name: Run SQL
 description: This task will run a SQL query against your database.
+slug: sql
 
 builder: go
 builderConfig:

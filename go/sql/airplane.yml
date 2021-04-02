@@ -1,0 +1,48 @@
+name: Run SQL
+description: This task will run a SQL query against your database.
+
+builder: go
+builderConfig:
+  entrypoint: main.go
+
+env:
+  AIRPLANE_DRIVER:
+    value: postgres
+  AIRPLANE_DSN:
+    # TODO(you): add your DSN as an Airplane config variable: https://docs.airplane.dev/reference/configs
+    #
+    # config: db/dsn
+    #
+    # Once you do that, you can remove this:
+    value: TODO
+
+arguments: ["{{.JSON}}"]
+parameters:
+  - name: SQL Command
+    desc: The SQL query to run against your database.
+    slug: sql
+    type: string
+    component: editor-sql
+
+  - name: Team Slug
+    desc: The unique slug of the team. This is what we will use in URLs.
+    slug: slug
+    type: string
+    # TODO: would be great to auto-generate a default value from the name.
+    # TODO: would be great to constrain on this slug being unique in our DB.
+    constraints:
+      # Same matcher as utils.IsSlug
+      regex: ^[a-z0-9]([a-z0-9_]*[a-z0-9])?$
+  - name: Email Domain
+    desc: The company email domain (f.e. "airplane.dev").
+    slug: domain
+    type: string
+    constraints:
+      optional: true
+      # Matches against `something.domain`.
+      #
+      # Mostly aiming to prevent us from accidentally doing
+      # something like "@airplane.dev" instead of "airplane.dev".
+      #
+      # Feel free to make this more permissive, too.
+      regex: ^[a-zA-Z0-9]+\.[a-zA-Z0-9]+$

@@ -1,5 +1,6 @@
 name: Hello World
 description: Greets you by name!
+slug: hello_world
 
 builder: go
 builderConfig:

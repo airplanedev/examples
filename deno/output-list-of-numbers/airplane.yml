@@ -1,5 +1,6 @@
 name: Number list
 description: Echos a series of numbers.
+slug: number_list
 
 builder: deno
 builderConfig:

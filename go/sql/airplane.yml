@@ -10,6 +10,11 @@ env:
   AIRPLANE_DRIVER:
     value: postgres
   AIRPLANE_DSN:
+    # When you deploy this task for the first time, the CLI will prompt you
+    # through creating a config variable called `db/dsn` to store your
+    # database's DSN.
+    #
+    # If you already have a config variable for this then update the name below.
     config: db/dsn
 
 arguments: ["{{.JSON}}"]

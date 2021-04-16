@@ -4,7 +4,7 @@ slug: sql
 
 builder: go
 builderConfig:
-  entrypoint: main.go
+  entrypoint: .
 
 env:
   AIRPLANE_DRIVER:

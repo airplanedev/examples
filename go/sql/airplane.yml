@@ -10,12 +10,7 @@ env:
   AIRPLANE_DRIVER:
     value: postgres
   AIRPLANE_DSN:
-    # TODO(you): add your DSN as a secret Airplane config variable: https://docs.airplane.dev/reference/configs
-    #
-    # config: db/dsn
-    #
-    # For testing, you can alternatively directly provide your DSN below:
-    value: TODO
+    config: db/dsn
 
 arguments: ["{{.JSON}}"]
 parameters:

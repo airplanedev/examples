@@ -4,7 +4,7 @@ slug: hello_world
 
 builder: go
 builderConfig:
-  entrypoint: main.go
+  entrypoint: .
 
 arguments: ["--name", "{{.name}}"]
 parameters:

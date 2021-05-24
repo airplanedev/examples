@@ -1,7 +1,9 @@
-const argv = require('yargs')
-  .option('name', {
-    type: 'string',
-  })
-  .argv
+// airplane.dev/slug/hello_world [generated: do not edit]
 
-console.log(`Hello, ${argv.name}!`);
+type Parameters = {
+  name: string;
+};
+
+export default function (parameters: Parameters) {
+  console.log(`Hello, ${parameters.name}!`);
+}

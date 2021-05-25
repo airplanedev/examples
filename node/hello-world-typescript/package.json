@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "devDependencies": {
     "@types/node": "^14.14.35"
+  },
+  "dependencies": {
+    "airplane": "^0.0.3"
   }
 }

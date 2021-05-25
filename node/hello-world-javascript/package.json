@@ -1,5 +1,8 @@
 {
   "name": "hello-world-javascript",
   "version": "1.0.0",
-  "main": "main.js"
+  "main": "main.js",
+  "dependencies": {
+    "airplane": "^0.0.3"
+  }
 }

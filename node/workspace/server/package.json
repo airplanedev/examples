@@ -1,0 +1,16 @@
+{
+	"name": "@team/server",
+	"main": "index.js",
+	"private": true,
+	"dependencies": {
+		"express": "*"
+	},
+	"workspaces": {
+		"nohoist": [
+			"@team/shared"
+		]
+	},
+	"airplane": {
+		"root": ".."
+	}
+}

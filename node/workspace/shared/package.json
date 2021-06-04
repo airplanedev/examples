@@ -1,0 +1,8 @@
+{
+	"name": "@team/shared",
+	"main": "index.js",
+	"private": true,
+	"dependencies": {
+		"shortid": "*"
+	}
+}
